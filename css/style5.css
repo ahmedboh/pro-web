@@ -1,0 +1,91 @@
+ video{
+            position: absolute;
+            left: 30%;
+            top: 50px;
+            border: 2px solid white;
+        }
+        body{background-color: RGBa(115, 96, 190,0.8);  }
+
+    #c1{position: absolute;
+         right: 5%;
+         top: 50px;
+         animation-name: a;
+         animation-duration:  5s;
+         animation-iteration-count: infinite;
+         animation-play-state: running;
+           }
+          @keyframes a{
+            0%,100%{
+                transform: translateY(0px);
+            }
+             50%{
+                transform: translateY(380px);
+             } 
+          } 
+    #c2{position: absolute;left: 40%; top: 420px;background-color: RGBa(228, 77, 38, 1);
+                animation-name: b;
+         animation-duration:  8s;
+         animation-direction: alternate;
+         animation-iteration-count: infinite;
+         animation-play-state: running;}
+         @keyframes b{
+            0%{  
+             transform: translateX(0px);
+            }
+             25%{
+
+                transform: translateX(-200px);
+             }
+             50%{
+
+                transform: translateX(0px);
+             } 
+             75%{
+                transform: translateX(200px);
+             }
+             100%{
+                transform: translateX(0px);
+                }
+          }
+    
+    #c3{position: absolute;left:  5%; top: 50px;background-color: RGBa(228, 77, 38, 1); 
+          animation-name: a;
+         animation-duration:  5s;
+         animation-iteration-count: infinite;
+         animation-play-state: running;
+           }
+            .c1{
+            margin-top: 20px;
+            font-size: 17px;
+            color:#6600cc;
+            width:70px;
+            height:27px;
+            transform: rotateZ(-25deg);
+            background-color: #ffe6ff;
+            transition: all 0.5s ease;
+            border: 1px solid #ffe6ff;
+        }
+        .c1:hover{
+            transform: scale(1.4) rotateZ(-35deg);
+            color: red;
+            
+        }
+ 
+        
+        .c2{
+            animation-name: re;
+            animation-duration:0.5s;
+            animation-iteration-count: infinite;  }
+        @keyframes re{
+            0% {color:red;}
+            50%{color: RGBa(228, 77, 38, 1);}
+            100%{color:red;}
+
+        } 
+
+    .controles{
+        position: absolute;
+        top: 350px;
+        left: 400px;
+    } 
+   

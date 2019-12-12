@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EDUC</title>
+    <meta charset="utf-8" />
+    <link href="../img\educ.png" rel="icon" />
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css" >
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/style6.css" rel="stylesheet" />
+     <style>
+        .box001 {
+          color: white;
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin: 12px;
+            padding: 10px;
+            border: 1px solid black;
+            background: deepskyblue ;
+            
+        }
+
+        .box002 {
+          color: white;
+
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin: 12px;
+            padding: 10px;
+            border: 1px solid white;
+        }
+    </style>   
+
+</head>
+
+<body >
+     <nav>
+            <ul>
+                <li class="menu-contact">
+                        <a href="../educ.html">EDUC</a><img  src="../img\educ.png">
+                </li>
+                <li class="menu-web"><a href="../web.html">WEB</a><img src="../img\web.png">
+                    <ul class="sub-menu">
+                        <li><a href="webCours.html"><img src="../img/cours.png"> Cours complet WEB </a></li>
+                        <li><a href="webTP.html "><img src="../img/exercice.png"> TP WEB</a></li>
+                    </ul>
+                </li>
+                <li class="menu-java"><a href="../java.html">JAVA</a><img src="../img\java.png">
+                    <ul class="sub-menu" class="sub-menu">
+                        <li><a href="#"><img src="../img/cours.png"> Cours complet JAVA</a></li>
+                        <li><a href="#"><img src="../img/exercice.png"> TP JAVA</a></li>
+                    </ul>
+                </li>
+                <li class="menu-angular"><a href="../angular.html">ANGULAR</a><img src="../img\angular.png">
+                    <ul class="sub-menu">
+                        <li><a href="#"><img src="../img/cours.png"> Cours complet ANGULAR</a></li>
+                        <li><a href="#"><img src="../img/exercice.png"> TP ANGULAR</a></li>
+                    </ul>
+                </li>
+                <li class="menu-php"><a href="../php.html">PHP</a><img src="../img\php.png">
+                    <ul class="sub-menu">
+                        <li><a href="#"><img src="../img/cours.png"> Cours complet PHP</a></li>
+                        <li><a href="#"><img src="../img/exercice.png"> TP PHP</a></li>
+                    </ul>
+                </li>
+                <li class="menu-jeux"><a href="../php.html">jouer avec EDUC</a><img src="../img\jeux.png">
+                    <ul class="sub-menu">
+                        <li><a href="#"><img src="../img/drag.png" >Jeux DRAG AND DROP</a></li>
+                        <li><a href="#"><img src="../img/canvas.png" >JEUX Canvas </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+
+
+
+
+
+
+
+
+    <p style="color: white">Score: <text id="score001">0</text></p>
+
+    <div class="box002" ondrop="drop001(event)">
+        <img src="../img/educ.png"/ ondragstart="dragStart001(event)" draggable="true" id="target001">
+    </div>
+
+    <div class="box002" ondrop="drop002(event)">
+        <img src="../img/web.png" ondragstart="dragStart002(event)" draggable="true" id="target002"/>
+    </div>
+
+    <div class="box002" ondrop="drop003(event)">
+        <img src="../img/java.png" ondragstart="dragStart003(event)" draggable="true" id="target003"/>
+    </div>
+
+    <div class="box002" ondrop="drop004(event)">
+        <img src="../img/angular.png" ondragstart="dragStart004(event)" draggable="true" id="target004"/>
+    </div>
+
+    <div class="box002" ondrop="drop005(event)">
+        <img src="../img/php.png" ondragstart="dragStart005(event)" draggable="true" id="target005"/>
+    </div>
+    <br /><br /><br /><br />
+
+    <div class="box001"  ondrop="drop006(event)" ondragover="allowDrop001(event)" id="place001">EDUC</div>
+
+    <div class="box001" ondrop="drop007(event)" ondragover="allowDrop002(event)" id="place002">WEB</div>
+
+    <div class="box001" ondrop="drop008(event)" ondragover="allowDrop003(event)" id="place003">JAVA</div>
+
+    <div class="box001" ondrop="drop009(event)" ondragover="allowDrop004(event)" id="place004">ANGULAR</div>
+
+    <div class="box001" ondrop="drop010(event)" ondragover="allowDrop005(event)" id="place005">PHP</div><br /><br /><br />
+    <div>
+    <button class="btn btn-danger"  onclick="submit001()">Submit</button>
+    <p style="color: white"  id="message001"></p>
+  </div>
+
+    <script>
+    var b = 0;
+    b++;
+function dragStart001(event) {
+    event.dataTransfer.setData("choice001", event.target.id);
+}
+
+function dragStart002(event) {
+    event.dataTransfer.setData("choice002", event.target.id);
+}
+
+function dragStart003(event) {
+    event.dataTransfer.setData("choice003", event.target.id);
+}
+
+function dragStart004(event) {
+    event.dataTransfer.setData("choice004", event.target.id);
+}
+
+function dragStart005(event) {
+    event.dataTransfer.setData("choice005", event.target.id);
+}
+
+function allowDrop001(event) {
+    event.preventDefault();
+}
+
+function allowDrop002(event) {
+    event.preventDefault();
+}
+
+function allowDrop003(event) {
+    event.preventDefault();
+}
+
+function allowDrop004(event) {
+    event.preventDefault();
+}
+
+function allowDrop005(event) {
+    event.preventDefault();
+}
+
+function drop006(event) {
+    var data = event.dataTransfer.getData("choice001");
+    event.target.appendChild(document.getElementById(data));
+score001.innerHTML = b++;
+        place001.innerHTML =" <img src='../img/educ.png'/>";
+}
+
+function drop007(event) {
+    var data = event.dataTransfer.getData("choice002");
+    event.target.appendChild(document.getElementById(data));
+score001.innerHTML = b++;
+        place002.innerHTML = " <img src='../img/web.png'/>";
+}
+
+function drop008(event) {
+    var data = event.dataTransfer.getData("choice003");
+    event.target.appendChild(document.getElementById(data));
+score001.innerHTML = b++;
+        place003.innerHTML = " <img src='../img/java.png'/>";
+}
+
+function drop009(event) {
+    var data = event.dataTransfer.getData("choice004");
+    event.target.appendChild(document.getElementById(data));
+score001.innerHTML = b++;
+        place004.innerHTML = " <img src='../img/angular.png'/>";
+}
+
+function drop010(event) {
+    var data = event.dataTransfer.getData("choice005");
+    event.target.appendChild(document.getElementById(data));
+score001.innerHTML = b++;
+        place005.innerHTML = " <img src='../img/php.png'/>";
+}
+
+function drop001(event) {
+    event.preventDefault();
+}
+
+function drop002(event) {
+    event.preventDefault();
+}
+
+function drop003(event) {
+    event.preventDefault();
+
+}
+
+function drop004(event) {
+    event.preventDefault();
+}
+
+function drop005(event) {
+    event.preventDefault();
+}
+
+function submit001() {
+if (b > 5) {
+message001.innerHTML = "felicitation vous êtes ganez.";
+}
+}
+    </script>
+
+
+
+
+     
+
+      </div>
+      </div>

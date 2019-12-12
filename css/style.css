@@ -1,0 +1,194 @@
+body{
+    
+    margin:0px;
+    padding:0px;
+    height:100vh;
+}
+
+nav{
+    font-family: Calibri;
+    width:100%;
+    background: #00004d;
+
+}
+
+img{
+    float:left;
+    width:50px;
+    height:40px;
+}
+a >img{
+    float:left;
+    width:25px;
+    height:25px;
+}
+
+nav  ul{
+    margin:0px;
+    padding:0px;
+
+}
+
+nav  ul:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+nav > ul > li{
+    float:left;
+    position:relative;
+    width:16%;
+    border-left:0.15px solid RGBa(220, 220, 220, 0.5);
+    text-align: center;
+    z-index:100;
+}
+
+nav > ul > li > a{
+    padding: :20px 20px;
+    color:#fff;  
+}
+
+nav > ul > li:hover a{
+    padding:10px 20px 20px 30px;
+}
+
+nav li{
+    list-style-type:none;
+}
+
+
+.sub-menu{
+    display:none;
+}
+
+nav a{
+    display:inline-block;
+    text-decoration:none;
+}
+
+nav li:hover .sub-menu{
+    display:block;
+    position:absolute;
+    top:100%;
+    left:0px;
+    padding:0px;
+    z-index:100;
+    text-align: center;
+    font-size:20px 
+
+}
+
+.sub-menu li{
+    border-bottom:1px solid #CCC;
+}
+
+.sub-menu li a{
+    padding:15px 30px;
+    font-size:17px;
+    color:#222538;
+    width:270px;
+}
+
+.menu-web:hover{
+    background-color:RGBa(228, 77, 38, 0.12);
+    border-top:5px solid #00bfff;
+}
+
+.menu-java:hover{
+    background-color:RGBa(000, 112, 192, 0.12);
+    border-top:5px solid #00bfff;
+}
+
+.menu-angular:hover{
+    background-color:RGBa(241, 211, 79, 0.12);
+    border-top:5px solid #00bfff;    
+}
+
+.menu-contact:hover{
+    background-color:RGBa(220, 220, 220, 0.2);
+    border-top:5px solid #00bfff;    
+}
+
+.menu-php:hover{
+    background-color:RGBa(137, 96, 185, 0.12);
+    border-top:5px solid #00bfff;  
+}
+
+.menu-jeux:hover{
+    background-color:RGBa(137, 96, 185, 0.12);
+    border-top:5px solid #00bfff;  
+}
+
+
+.menu-web .sub-menu,.menu-java .sub-menu,.menu-angular .sub-menu,.menu-php .sub-menu,.menu-jeux .sub-menu{
+    background-color: #00bfff ;
+    opacity: 0.8;
+}
+
+
+
+.menu-contact .sub-menu{
+    background-color:RGBa(228, 77, 38, 1);
+}
+
+.sub-menu li:hover a{
+    color: #EEE;
+    font-weight:bold;
+}
+
+.menu-web .sub-menu li:hover{
+    background-color: #0000e6 ;
+}
+
+.menu-java .sub-menu li:hover{
+    background-color:RGB(000, 115, 200);
+}
+
+.menu-angular .sub-menu li:hover{
+    background-color:#e60000;
+}
+
+.menu-php .sub-menu li:hover{
+    background-color:RGB(115, 96, 190);
+}
+
+.menu-jeux .sub-menu li:hover{
+    background-color:#b30000;
+}
+
+
+footer{
+    background:#212125;
+    border-top:0.25px solid #424558;
+    font-family:'Source code pro', Calibri, serif;
+    color:RGBa(999, 999, 999, 1);
+    opacity:1;
+    position: absolute;
+    width:100%;
+    text-align: center;
+    padding:0%;
+    margin-bottom:0px;
+    margin-top:0vh;
+    margin-right:0px;
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.social > img {
+    float:none;
+    width:40px;
+    height:40px;
+
+}
+footer > div{
+    width:80%;
+}
+
+
+
+
+
+
+

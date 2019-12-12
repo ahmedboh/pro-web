@@ -1,0 +1,170 @@
+.content{
+
+    width:100%;
+    height:100vh;
+top:0;
+animation-name: animation1;
+animation-duration: 15s;
+animation-iteration-count: infinite;
+background-size: cover;
+}
+@keyframes animation1{
+0%,100%{ background-image:url("../img/im1.jpg");}
+25%{background-image:url("../img/im2.jpg") ;}
+50%{background-image:url("../img/im3.jpg") ;}
+75%{background-image:url("../img/im4.jpg") ;}
+}
+
+.c11{
+position: relative;
+
+width:100px;
+height:100px;
+top:-300px;left:1000px;
+border-radius: 100px;
+animation-name: animation0;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+
+
+}
+@keyframes animation0{
+ 0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translateX(100px) rotate(30deg);
+    }
+}
+.c13{
+
+position: absolute;
+width:100px;
+height:100px;
+top:395px;right:900px;
+border-radius: 100px;
+animation-name: animat;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+
+
+}
+@keyframes animat{
+ 0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(-100px) rotate(-30deg);
+    }
+}
+.c21{position: relative;
+    background-color: darksalmon;
+    top:1000px;left:10px;
+    width: 200px;
+    height: 200px;
+    opacity: 0.7; 
+animation-name: animation2;
+animation-iteration-count: infinite;
+animation-duration: 15s;
+animation-delay: 1s;
+border-radius: 50px;
+transition-property: transform;
+}
+.c21:hover{transform:rotate(-30deg);}
+@keyframes animation2{
+    0%,100%{top:600px;left:10px; }
+    50%{top:70px;left:10px;}
+
+
+}
+
+.c31{position: absolute;
+    background-color: darksalmon;
+    top: 1000px;left: 360px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    opacity: 0.7;
+animation-name: animation3;
+animation-iteration-count: infinite;
+animation-duration: 15s;
+animation-delay: 1.5s;
+transition-property: transform;
+
+}
+.c31:hover{transform:rotate(30deg);}
+@keyframes animation3{
+    0%,100%{top: 1000px;left: 360px; }
+    50%{top:500px;left: 360px}
+
+
+}
+.c41{position: absolute;
+    background-color: darksalmon;
+    top:1000px;left:750px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    
+animation-name: animation4;
+animation-iteration-count: infinite;
+animation-duration: 15s;
+animation-delay: 2s;
+opacity: 0.7;
+transition-property: transform;
+
+
+}
+.c41:hover{transform:rotate(-30deg);}
+@keyframes animation4{
+    0%,100%{top:1000px;left:750px;}
+    50%{top:500px;left:750px;}
+
+
+}
+.c51{position: absolute;
+    background-color: darksalmon;
+    top:1000px ;left:1080px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    opacity: 0.7;
+    
+animation-name: animation5;
+animation-iteration-count: infinite;
+animation-duration: 15s;
+animation-delay: 2.5s;
+transition-property: transform;
+
+}
+.c51:hover{transform:rotate(30deg);}
+@keyframes animation5{
+    0%,100%{top:1000px ;left:1080px;}
+    50%{top:500px;left:1080px;}
+
+
+}
+div{text-align: center;text-decoration-color: brown;font-size: 30px; }
+.c16{
+
+    text-align: center;text-decoration-color: brown;font-size: 30px; 
+    position: relative;
+    top:-200px;
+animation-name: animationt;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+@keyframes animationt{
+0%,100%{top:-200px;left:0px;}
+50%{top:-170px;left:0px;}
+}

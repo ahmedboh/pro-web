@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EDUC</title>
+        <meta charset="utf-8"/>
+        <link href="img\educ.png" rel="icon"/>
+        
+        <link href="css/educfig.css" rel="stylesheet"/>
+        <link href="css/style.css" rel="stylesheet"/>
+        <link href="css/style1.css" rel="stylesheet"/> 
+        <link href="css/educ.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="../dist/css/bootstrap.min.css" >
+
+
+        
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li class="menu-contact">
+                        <a href="educ.html">EDUC</a><img  src="img\educ.png">
+                </li>
+                <li class="menu-web"><a href="web.html">WEB</a><img src="img\web.png">
+                    <ul class="sub-menu">
+                        <li><a href="pages/webCours.html"><img src="img/cours.png"> Cours complet WEB </a></li>
+                        <li><a href="pages/webTP.html"><img src="img/exercice.png"> TP WEB</a></li>
+                    </ul>
+                </li>
+                <li class="menu-java"><a href="java.html">JAVA</a><img src="img\java.png">
+                    <ul class="sub-menu" class="sub-menu">
+                        <li><a href="#"><img src="img/cours.png"> Cours complet JAVA</a></li>
+                        <li><a href="#"><img src="img/exercice.png"> TP JAVA</a></li>
+                    </ul>
+                </li>
+                <li class="menu-angular"><a href="angular.html">ANGULAR</a><img src="img\angular.png">
+                    <ul class="sub-menu">
+                        <li><a href="#"><img src="img/cours.png"> Cours complet ANGULAR</a></li>
+                        <li><a href="#"><img src="img/exercice.png"> TP ANGULAR</a></li>
+                    </ul>
+                </li>
+                <li class="menu-php"><a href="php.html">PHP</a><img src="img\php.png">
+                    <ul class="sub-menu">
+                        <li><a href="#"><img src="img/cours.png"> Cours complet PHP</a></li>
+                        <li><a href="#"><img src="img/exercice.png"> TP PHP</a></li>
+                    </ul>
+                </li>
+                <li class="menu-jeux"><a href="#">jouer avec EDUC</a><img src="img\jeux.png">
+                    <ul class="sub-menu">
+                        <li><a href="pages/dragAndDrop.html"><img src="img/drag.png" >Jeux DRAG AND DROP</a></li>
+                        <li><a href="#"><img src="img/canvas.png" >JEUX Canvas </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+
+
+<div class="ca">
+   <p><span><img  src="img\educ.png" class="cb"></span><span>E</span><span>D</span><span>U</span><span>C</span></p>  
+</div>
+
+
+
+
+
+
+
+
+
+        <div class="animation">
+            <div class="sky">
+               
+                <img class="cloud" src="img\cloud.png"/>
+                <img class="cloud" src="img\cloud.png"/> 
+                <img class="cloud" src="img\cloud.png"/>
+                <img class="cloud" src="img\cloud.png"/>
+                <img class="cloud" src="img\cloud.png"/> 
+                <img class="cloud" src="img\cloud.png"/>    
+                <div class="hello"> EDUC </br>BEINVENU...</div>
+            </div>
+            <div class="grass"></div>
+            <div class="road">
+                <img class="educ" src="img\educ.png">
+                <img class="web" src="img\web.png">
+                <img class="java" src="img\java.png">
+                <img class="angular" src="img\angular.png">
+                <img class="php" src="img\php.png">
+
+            </div>
+        </div>
+
+<div class="ca">
+   <p><span><img  src="img\educ.png" class="cb"></span><span>E</span><span>D</span><span>U</span><span>C</span></p>  
+</div>
+        <div class="content">
+<div class="c21"><br><br>BIENVENU</div>
+<div class="c31"><br><br>DANS</div>
+<div class="c41"><br><br>NOTRE</div>
+<div class="c51"><br><br>EDUC</div>
+ <img  class="c11"src="img\educ.png">
+ <img  class="c13"src="img\educ.png">
+<p class="c16">Made by AHMED WERFELLI</p>
+ </div>
+<button onclick="getLocation()" class="btn btn-success">votre position  </button>
+
+<p id="i1" style="color: red; font-family: 'Times New Roman', Times, serif;font-size: 20px ; border :2px blue solid; " ></p>
+
+<script>
+var geo = document.getElementById("i1");
+
+function getLocation() 
+{
+  if (navigator.geolocation) 
+  {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } 
+  else 
+  { 
+    geo.innerHTML = "Geolocation est n'est pas suporteé.";
+  }
+}
+
+function showPosition(position) {
+  geo.innerHTML = " Latitude : " + position.coords.latitude + 
+  "<br>  Longitude  : " + position.coords.longitude;
+}
+</script>
+        <footer>
+            <div>
+                    QUI EDUC ? ? ? <br/><br>
+            EDUC est Une institution qui vous propose l'opportunité pour etudier en lignes .<br/> Il aime la programmation et le dragage d'œuvres d'art.<br/><br/>
+            © 2019 -  
+            </div>
+            <div class="social">
+                    GET SOCIAL<br/>
+                    <img src="img\fb.png">&nbsp; &nbsp;
+                    <img src="img\youtube.png">&nbsp; &nbsp;
+                    <img src="img\twit.png">
+                </div>
+        </footer>
+    </body>
+</html>
+
+s

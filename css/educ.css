@@ -1,0 +1,83 @@
+
+p{
+margin:0;
+padding:0;
+
+color:#111;
+font-size:90px;
+
+
+}
+
+p span{
+display:table-cell;
+margin:0;
+padding:0;
+text-align: center;
+animation-name:animater ;
+animation-duration: 3s;
+animation-iteration-count:infinite;
+
+}
+p span:nth-child(1)
+{animation-delay:0s;}
+
+p span:nth-child(2)
+{animation-delay:0.75s;}
+
+p span:nth-child(3)
+{animation-delay:1.5s;}
+
+p span:nth-child(4)
+{animation-delay:2.25s;}
+
+
+
+@keyframes animater
+{
+5%,95%
+{
+color:#fff;
+filter:blur(1px);
+text-shadow: 0 0 10px #00b3ff,
+            0 0 20px #00b3ff,
+            0 0 40px #00b3ff,
+            0 0 80px #00b3ff,
+            0 0 120px #00b3ff,
+            0 0 200px #00b3ff,
+            0 0 300px #00b3ff,
+            0 0 400px #00b3ff;
+}
+10%,90%
+{
+color:#111;
+filter:blur(0px);
+text-shadow: none ;
+}
+
+}
+
+
+
+.ca{
+	background-color: black;
+    animation-name:an;
+    animation-duration: 2s;
+     animation-iteration-count:infinite;
+  
+     }
+ @keyframes an
+{
+0%,100%
+{
+color:#111;
+
+}
+}
+
+.cb{
+	position: relative;
+	float: right;
+	height: 70px;
+	width:70px;
+}
